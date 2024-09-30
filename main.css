@@ -1,0 +1,32 @@
+#header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+#header div{
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu span{
+    padding-left: 30px;
+}
+.registr span{
+    padding-left: 20px;
+}
+.delivery{
+    width: 1800px;
+    height: 680px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 50%, rgba(0,212,255,1) 100%);
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.delivery{
+    color: white;
+}
