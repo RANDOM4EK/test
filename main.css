@@ -144,3 +144,24 @@
     margin-top: 163px;
     margin-left: 330px;
 }
+.advantage{
+    width: 1400px;
+    height: 180px;
+    background-color: #8A8A8A1A;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 158px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.advantage > div{
+    display: flex;
+    flex-direction: row;
+    
+}
+.grup{
+
+}
