@@ -17,6 +17,7 @@
 }
 .menu span{
     margin-right: 30px;
+    font-size: 20px;
 }
 .registration{
     display: flex;
@@ -96,8 +97,50 @@
     flex-direction: row;
     width: 1400px;
     height: 100px;
+    margin-top: 40px;
+    
 }
 .tabs div{
     width: 100%;
     height: 100%;
+}
+
+.tovar{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 54px;
+}
+.data{
+    margin-top: 33px;
+}
+
+.imgPrice{
+    width: 400px;
+    height: 120px;
+    background-color: #F2F6FC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 18px;
+}
+.text{
+    font-size: 26px;
+    padding-top: 80px;
+}
+.price{
+    font-size: 26px;
+}
+.layer1{
+    width: 120px;
+    height: 120px;
+    margin-top: 163px;
+}
+.layer2{
+    width: 120px;
+    height: 120px;
+    margin-top: 163px;
+    margin-left: 330px;
 }
