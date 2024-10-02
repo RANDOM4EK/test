@@ -157,11 +157,42 @@
     align-items: center;
     justify-content: center;
 }
-.advantage > div{
+.advantage > div>div{
     display: flex;
     flex-direction: row;
-    
+    font-size: 18px;
+    font-weight: 700;
 }
-.grup{
-
+.advantage > div>div>img{
+    padding-right: 26px;
+    padding-left: 78px;
+}
+.advantage > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group1{
+    width: 174px;
+    height: 135.5px;
+    margin-left: 51px;
+    margin-right: 71px;
+}
+.group2{
+    width: 322px;
+    height: 135.5px;
+    border-left: 1px solid #C0C9D7
+}
+.group3{
+    width: 284px;
+    height: 135.5px;
+    margin-left: 67px;
+    margin-right: 74px;
+    border-left: 1px solid #C0C9D7
+}
+.group4{
+    width: 295px;
+    height: 135.5px;
+    margin-right: 62px;
+    border-left: 1px solid #C0C9D7
 }
