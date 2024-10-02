@@ -49,10 +49,9 @@
     margin-right: auto;
     display: flex;
     flex-direction: row;
-}
-.delivery{
     color: white;
 }
+
 .deliveryDiv1{
     display: flex;
     justify-content: center;
@@ -156,6 +155,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 160px;
 }
 .advantage > div>div{
     display: flex;
@@ -195,4 +195,52 @@
     height: 135.5px;
     margin-right: 62px;
     border-left: 1px solid #C0C9D7
+}
+
+.onlineTrade{
+    width: 1800px;
+    height: 480px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 160px;
+}
+.onlinePosition{
+    display: flex;
+    flex-direction: row;
+}
+.onlineImg{
+    width: 402px;
+    height: 405px;
+    margin-left: 260px;
+    margin-top: 38px;
+}
+.onlineText{
+    margin-top: 111px;
+    margin-left: 75px;
+    width: 763px;
+    height: 257px;
+}
+.onlineFirstP{
+    font-size: 30px;
+    font-weight: 700;
+}
+.onlineLastP{
+    font-size: 18px;
+    font-weight: 400;
+}
+.onlineSpan{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
