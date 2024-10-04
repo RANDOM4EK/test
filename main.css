@@ -374,6 +374,8 @@
     margin-right: 350px;
     margin-left: 29px;
     width: 270px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .options_item-info-img img{
     width: 52px;
@@ -400,4 +402,42 @@
     font-size: 20px;
     height: 16px;
     margin: 0;
+    font-weight: 700;
+}
+.steps-info{
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: 0 auto;
+}
+.steps-info span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+}
+.steps-info >p{
+    font-size:20px;
+
+}
+.steps-info-item{
+    display: flex;
+    flex-direction: row;
+    width: 328px;
+    height: 412px;
+    gap: 30px;
+}
+.steps-info-img img{
+    width: 280px;
+    height: 280px;
+}
+.steps-info-img-text{
+    font-size: 20px;
+    font-weight: 700;
 }
