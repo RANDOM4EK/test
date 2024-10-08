@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    transition: all 1s;
 }
 #header{
     width: 100%;
@@ -96,6 +97,10 @@
     min-height: 893px;
     margin-top: 160px;
 }
+.benefit-info > h1{
+    margin-left: 200px;
+
+}
 
 
 
@@ -109,7 +114,9 @@
     margin-right: auto;
     
 }
-.benefit-tabs div{
+.benefit-tabs >div{
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -504,4 +511,131 @@
 .client_info-cards-elem-p{
     font-size: 18px;
     font-weight: 700;
+}
+.reviews{
+    margin-top: 80px;
+}
+.reviews >div>h1{
+    margin-left: 200px;
+}
+.reviews_info{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.reviews_info-elem{
+    display: flex;
+    flex-direction: row;
+    width: 685px;
+    height: 260px;
+    background-color: #FAFAFA;
+    border-radius: 16px;
+    align-items: center;
+}
+.reviews_info-elem >img{
+    width: 240px;
+    height: 240px;
+    margin-left: 10px;
+    margin-right: 38px;
+}
+.star{
+    font-size: 20px;
+    color:#FFA009;
+}
+.reviews_info-elem-position{
+    display: flex;
+    flex-direction: column;
+}
+.text_info{
+    width: 1400px;
+    height: 467px;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.email{
+    width: 1800px;
+    height: 250px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 160px;
+}
+.email_info{
+    display: flex;
+    flex-direction: row;
+}
+.email_info > h1{
+    width: 482px;
+    height: 120px;
+    margin-top: 66px;
+    margin-left: 200px;
+}
+.email_info_elem{
+    width: 513px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    margin-top: 108px;
+    margin-left: 114px;
+}
+.email_info_elem > img{
+    width: 26px;
+    height: 26px;
+}
+.email_info_elem_span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 92px;
+    margin-left: 51px;
+}
+
+.footer{
+    
+    width: 100%;
+    height: 474px;
+}
+.footer_info{
+   display: flex;
+    flex-direction: row; 
+}
+.footer_info-elem-img{
+    margin-top: 70px;
+    margin-left: 260px;
+    margin-right: 166px;
+}
+.footer_info-elem{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin-top: 86px;
+}
+.copyright{
+    display: flex;
+    width: 1800px;
+    height: 57px;
+    border-top: 1px solid #1F2428;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+span:hover{
+    scale: 1.1;
 }
