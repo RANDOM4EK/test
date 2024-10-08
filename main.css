@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
 }
-
 .container {
     max-width: 1800px;
     margin: 0 auto;
@@ -439,5 +438,70 @@
 }
 .steps-info-img-text{
     font-size: 20px;
+    font-weight: 700;
+}
+
+.tour{
+    margin-top: 150px;
+}
+.tour_info{
+    width: 1800px;
+    height: 480px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 160px;
+}
+.tout_info-img{
+    width: 402px;
+    height: 405px;
+    margin-left: 260px;
+    margin-top: 38px;
+}
+.tour_info-elem{
+    margin-top: 111px;
+    margin-left: 75px;
+    width: 763px;
+    height: 257px;
+}
+.tour_info-elem-h1{
+    width: 824px;
+}
+.tour_info-elem-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+.tour_info-elem-span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client_info{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.client_info-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.client_info-cards-elem{
+    width: 447px;
+    height: 250px;
+    padding: 35px;
+    background-color: #FAFAFA;
+}
+.client_info-cards-elem-p{
+    font-size: 18px;
     font-weight: 700;
 }
