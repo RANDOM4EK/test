@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    transition: all 1s;
+    transition: all .5s;
 }
 #header{
     width: 100%;
@@ -117,8 +117,15 @@
 .benefit-tabs >div{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
+    transition: all .2s;
+}
+.benefit-tabs >div:hover{
+    background-color: #d0d0d0;
+    border-radius: 16px;
+    scale: 1.1;
 }
 
 .tovar_info{
@@ -174,6 +181,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 160px;
+}
+.advantage_info > div>div{
+    transition: all .2s;
+    
+}
+.advantage_info > div>div:hover{
+    scale: 1.1;
 }
 .advantage_info > div>div{
     display: flex;
@@ -625,6 +639,18 @@
     gap: 200px;
     margin-top: 86px;
 }
+.footer_info-elem-company{
+    display: flex;
+    flex-direction: column;
+}
+.footer_info-elem-useful{
+    display: flex;
+    flex-direction: column;
+}
+.footer_info-elem-project{
+    display: flex;
+    flex-direction: column;
+}
 .copyright{
     display: flex;
     width: 1800px;
@@ -634,8 +660,15 @@
     justify-content: center;
 }
 
-
+.footer_info-elem span {
+    display: block;
+    cursor: pointer;
+}
 
 span:hover{
-    scale: 1.1;
+    scale: .9;
+}
+
+.reviews_info-elem:hover {
+    transform: rotate(360deg)
 }
