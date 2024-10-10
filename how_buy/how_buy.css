@@ -1,0 +1,93 @@
+.lets_buy{
+    color: white;
+    width: 1800px;
+    height: 380px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+}
+.lets_buy-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 182px;
+    padding-top: 88px;
+}
+.lets_buy-info-elem-span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 260px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.buy_from-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.buy_from-info_elem{
+    margin-left: 70px;
+}
+.buy_from-info_elem >div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buy_from-info_elem-number{
+    font-size: 80px;
+    color: #01CD7D;
+}
+.buy_from-info_elem-adress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-left: solid 1px rgb(151, 151, 151);
+    padding-left: 30px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.buy_from-info_elem-text{
+    font-size: 18px;
+}
+.buy_from-info_elem-span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 260px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+}
+.have_question{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 1800px;
+    height: 280px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-top: 160px;
+}
+.have_question-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.have_question-info > p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 44px;
+    font-weight: 800;
+}
