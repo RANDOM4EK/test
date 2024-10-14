@@ -1,0 +1,81 @@
+.lets_buy{
+    color: white;
+    width: 1800px;
+    height: 380px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+}
+.lets_buy-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 182px;
+    padding-top: 88px;
+}
+.lets_buy-info-elem-span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 260px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.black_friday-info-elem-h2{
+    margin-left: 200px;
+}
+.black_friday{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+
+.black_friday-info-elem{
+    display: flex;
+    flex-direction: row;
+}
+.black_friday-info-elem-img{
+    width: 328px;
+    height: 360px;
+    margin-right: 56px;
+    margin-bottom: 30px;
+}
+
+.black_friday-info-elem-text{
+    width: 301px;
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.have_question{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 1800px;
+    height: 280px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-top: 160px;
+}
+.have_question-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.have_question-info > p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 44px;
+    font-weight: 800;
+}
+a{
+    color: #01CD7D;
+    cursor: pointer;
+    text-decoration: none;
+}
