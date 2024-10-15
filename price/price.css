@@ -1,0 +1,127 @@
+.delivery_services{
+    width: 1800px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+}
+.delivery_services > p{
+    font-size: 48px;
+    font-weight: 800;
+    padding-left: 182px;
+}
+.delivery_options-info{
+    margin-top: 150px;
+    gap: 30px;
+}
+.posylka{
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.posylka_info{
+    display: flex;
+    flex-direction: column;
+}
+.posylka_info-elem-img>img{
+    width: 300px;
+    height: 290px;
+}
+.posylka_info-text-first{
+    font-size: 24px;
+    font-weight: 700;
+    width: 300px;
+    margin: 10px 0;
+}
+.posylka_info-text-last{
+    width: 300px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.posylka_info-elem-div-span{
+    display: flex;
+    width: 180px;
+    height: 56px;
+    background-color: #41B7E9;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.posylka_info-elem-div-span:hover{
+    scale: .9;
+}
+.okey_post-info{
+    height: auto;
+}
+.warehouse{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.warehouse>p{
+    font-size: 44px;
+    font-weight: 800;
+}
+.warehouse_info{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.warehouse_info-elem1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+}
+
+.warehouse_info-elem1 > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 685px;
+    height: 80px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 16px;
+}
+.warehouse_info-elem1 > div >p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.warehouse_info-elem-text1{
+    width: 75%;
+    padding-left: 5%;
+}
+.warehouse_info-elem-text2{
+    display: flex;
+    border-left: solid 1px black;
+    height: 64px;
+    align-items: center;
+    width: 25%;
+    padding-left: 5%;
+}
+.warehouse_info-elem2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.warehouse_info-elem2 > div{
+    width: 1400px;
+    height: 104px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.warehouse_info-elem2 > div > div > p{
+    margin: 0;
+}
