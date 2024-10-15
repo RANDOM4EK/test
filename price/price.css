@@ -125,3 +125,195 @@
 .warehouse_info-elem2 > div > div > p{
     margin: 0;
 }
+.operator{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 200px;
+    margin-top: 300px;
+}
+.operator > p{
+    font-size: 44px;
+    font-weight: 800;
+}
+.operator_info{
+    width: 1400px;
+    height: 132px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 16px;
+}
+.operator_info-elem{
+    width: 75%;
+    padding-left: 3%;
+    padding-right: 20%;
+}
+.operator_info-elem-text1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.operator_info-elem-text3{
+    display: flex;
+    align-items: center;
+    border-left: solid 1px black;
+    padding-left: 2%;
+    width: 25%;
+    font-weight: 700;
+    height: 104px;
+}
+.link_tovar{
+    display: flex;
+    color: white;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    height: 530px;
+    margin-top: 160px;
+}
+.link_tovar-info{
+    display: flex;
+    flex-direction: row;
+}
+.link_tovar-info-elem-img{
+    margin-left: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.link_tovar-info-elem-input{
+    border-bottom: solid 1px #FFFFFF;
+    width: 513px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 34px;
+}
+.link_tovar-info-elem-text{
+    display: flex;
+    flex-direction: column;
+    margin: auto 75px;
+    margin-right: 0;
+}
+.link_tovar-info-elem-text > p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 845px;
+}
+.link_tovar-info-elem-span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.link_tovar-info-elem-span > span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.link_tovar-info-elem-span > p{
+    width: 496px;
+    margin-left: 50px;
+}
+.insurance{
+    margin-left: 200px;
+}
+.insurance > p {
+    font-size: 44px;
+    font-weight: 800;
+}
+.insurance_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.insurance_elem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #efefef;
+    width: 1400px;
+    height: 84px;
+    border-radius: 16px;
+}
+.insurence_elem-text1{
+    padding-left: 3%;
+    padding-right: 30%;
+    font-size: 18px;
+    font-weight: 700;
+}
+.insurence_elem-text2{
+    padding-left: 3%;
+    height: 66px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    border-left: solid 1px black;
+}
+.additional_packaging{
+    margin-left: 200px;
+}
+.additional_packaging > p{
+    font-size: 44px;
+    font-weight: 800;
+}
+.additional_packaging-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.additional_packaging-elem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 16px;
+    width: 685px;
+    height: 104px;
+}
+.additional_packaging-elem-text{
+    padding-left: 3%;
+    padding-right: 40%;
+}
+.additional_packaging-elem>div>p{
+    margin: 0;
+    ;
+}
+.additional_packaging-elem>p{
+    display: flex;
+    align-items: center;
+    border-left: solid 1px black;
+    height: 82px;
+    padding-left: 3%;
+}
+.have_question{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 1800px;
+    height: 280px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-top: 160px;
+}
+.have_question-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.have_question-info > p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 44px;
+    font-weight: 800;
+}
