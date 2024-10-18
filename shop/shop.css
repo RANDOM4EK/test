@@ -1,0 +1,63 @@
+.shop{
+    width: 1800px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    font-size: 48px;
+    font-weight: 800;
+    padding-left: 182px;
+    border-radius: 36px;
+}
+.popular_shop{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.popular_shop-elem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+    min-height: 200px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 5px rgb(202, 202, 202);
+}
+.popular_shop-elem>p{
+    font-weight: 700;
+    font-size: 18px;
+}
+.have_question{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 1800px;
+    height: 280px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-top: 160px;
+}
+.have_question-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.have_question-info > p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+//1200
+//768
+//420

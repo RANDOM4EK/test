@@ -1,0 +1,14 @@
+.blog{
+    width: 1800px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    font-size: 48px;
+    font-weight: 800;
+    padding-left: 182px;
+    border-radius: 36px;
+}

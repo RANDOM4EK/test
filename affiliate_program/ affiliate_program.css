@@ -1,0 +1,103 @@
+.lets_buy{
+    color: white;
+    width: 1800px;
+    height: 380px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+}
+.lets_buy-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 182px;
+    padding-top: 88px;
+}
+.lets_buy-info-elem-span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 260px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.earn_money{
+    margin-left: 200px;
+}
+.earn_money > p{
+    font-size: 44px;
+    font-weight: 800;
+}
+.earn_money-elem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.earn_money-info{
+    background-color: rgb(235, 235, 235);
+    border-radius: 16px;
+    width: 685px;
+    height: 280px;
+}
+.earn_money-elem-img{
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.earn_money-elem-p-first{
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.earn_money-elem-p-last{
+    margin-left: 35px;
+    width: 480px;
+}
+.join_affiliate-info{
+    width: 1800px;
+    height: 480px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 180px;
+}
+.join_affiliate-position{
+    display: flex;
+    flex-direction: row;
+}
+.join_affiliate-img{
+    width: 402px;
+    height: 405px;
+    margin-left: 260px;
+    margin-top: 38px;
+}
+.join_affiliate-info-text{
+    margin-top: 111px;
+    margin-left: 75px;
+    width: 763px;
+    height: 257px;
+}
+.join_affiliate-info-text-first{
+    font-size: 30px;
+    font-weight: 700;
+}
+.join_affiliate-info-text-last{
+    font-size: 18px;
+    font-weight: 400;
+}
+.join_affiliate-info-span{
+    background: rgb(0,201,123);
+    background: linear-gradient(90deg, rgba(0,201,123,1) 0%, rgba(0,217,129,1) 100%);
+    border-radius: 36px;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,95 @@
+.answer_quetions{
+    width: 1800px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+}
+.answer_quetions > p{
+    font-size: 48px;
+    font-weight: 800;
+    padding-left: 182px;
+}
+.search_quetions{
+    width: 1400px;
+    height: 180px;
+    margin-left: 200px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.search_quetions-info{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px black;
+    width: 1324px;
+    margin: 0 auto;
+}
+.search_quetions  p{
+    margin-left: 38px;
+    margin-top: 40px;
+}
+.search_quetions-elem-input{
+    border: none;
+    background-color: rgb(235, 235, 235);
+    width: 1300px;
+}
+.questions{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.questions > p{
+    font-size: 44px;
+    font-weight: 800;
+}
+.questions_info{
+    display: flex;
+    align-items: center;
+    width: 1400px;
+    min-height: 90px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 16px;
+}
+.questions-elem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.questions-elem > p{
+    width: 94.5%;
+    margin-left: 2%;
+    font-size: 18px;
+    font-weight: 700;
+}
+.have_question{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 1800px;
+    height: 280px;
+    background: rgb(91,82,163);
+    background: linear-gradient(90deg, rgba(91,82,163,1) 0%, rgba(64,184,234,1) 100%);
+    border-radius: 36px;
+    margin-top: 160px;
+}
+.have_question-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.have_question-info > p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 44px;
+    font-weight: 800;
+}
