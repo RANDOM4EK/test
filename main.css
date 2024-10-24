@@ -53,9 +53,6 @@ a{
     justify-content: center;
     color: white;
 }
-.delivery{
-    min-height: 680px; 
-}
 
 .dilevery__info {
     display: flex;
@@ -70,6 +67,7 @@ a{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 10%;
 }
 .dilevery__info-location{
     width: 715px;
@@ -558,7 +556,7 @@ a{
     height: 467px;
     font-size: 18px;
 }
-.email{
+.email_info{ 
     width: 1800px;
     height: 250px;
     background: rgb(91,82,163);
@@ -566,12 +564,8 @@ a{
     border-radius: 36px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
     color: white;
     margin-bottom: 160px;
-}
-.email_info{
     display: flex;
     flex-direction: row;
 }
@@ -613,7 +607,7 @@ a{
     height: 474px;
 }
 .footer_info{
-   display: flex;
+    display: flex;
     flex-direction: row; 
 }
 .footer_info-elem-img{
@@ -663,3 +657,171 @@ span:hover{
     cursor: pointer;
 }
 
+@media screen and (width <= 1200px) {
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .container2{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .dilevery__info-location{
+        font-size: 44px;
+        width: 400px;
+    }
+    .dilevery__info-elem{
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+    .dilevery__info-advertising{
+        width: 400px;
+    }
+    .price_info{
+        width: 200px;
+    }
+    .price_info-text{
+        width: 200px;
+        font-size: 20px;
+    }
+    .price{
+        margin-top: 10%;
+        margin-bottom: 0;
+    }
+    .price_info-img{
+        width: 200px;
+        font-size: 14px;
+    }
+    .tovar_info-delivery > div > img{
+        width: 400px;
+    }
+    .tovar_info-img-first{
+        margin-top: 80%;
+        margin-right: 40%;
+    }
+    .tovar_info-img-last{
+        margin-top: 80%;
+        margin-left: 40%;
+    }
+    .benefit{
+        width: auto;
+        height: auto;    
+    }
+    .advantage_info{
+        width: auto;
+        height: auto;
+    }
+    .advantage_info-saving{
+        width: 150px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .advantage_info-products{
+        width: 150px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .advantage_info-prompt{
+        width: 150px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .advantage_info-tovar{
+        width: 150px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .advantage_info{
+        display: flex;
+        gap: 45px;
+    }
+    .advantage_info > div>div{
+        display: flex;
+        align-items: center;
+    }
+    .advantage_info > div>div>img{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .online_trade-info{
+        width: auto;
+        height: auto;
+    }
+    .online_trade-img{
+        margin-left: 5%;
+    }
+    .online_trade-info-text{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .online_trade-info-text-first{
+        width: 80%;
+    }
+    .online_trade-info-text-last{
+        width: 80%;
+    }
+    .okey_post-info{
+        width: auto;
+    }
+    .delivery_options-info{
+        width: auto;
+    }
+    .options_item-info-img{
+        margin-right: 5%;
+    }
+    .options_item-group{
+        padding-left: 5px;
+        margin-left: 0;
+    }
+    .steps-info{
+        width: auto;
+    }
+    .steps-info-item{
+        width: auto;
+    }
+    .steps-info-img > img{
+        width: 180px;
+        height: 200px;
+    }
+    .tour_info{
+        width: auto;
+    }
+    .tout_info-img{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .tour_info-elem-h1{
+        width: 80%;
+    }
+    .text_info{
+        width: auto;
+    }
+    .email_info{
+        margin: 0;
+        width: auto;
+    }
+    .email_info > h1{
+        width: 40%;
+        margin-left: 5%;
+        font-size: 30px;
+    }
+    .email_info_elem{
+        margin-left: 5%;
+    }
+    .email_info_elem_span{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .footer_info-elem-img{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .copyright{
+        width: auto;
+    }
+    .footer_info-elem{
+        gap: 50px;
+    }
+}
