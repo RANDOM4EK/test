@@ -2,6 +2,9 @@
     box-sizing: border-box;
     transition: all .5s;
 }
+.burger_menu{
+    display: none;
+}
 a{
     text-decoration: none;
     color: #1F2428;
@@ -826,6 +829,92 @@ span:hover{
     }
 }
 @media screen and (width <= 768px){
+    .burger_menu{
+        display: block;
+    }
+    #header{
+        display: none;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    /* скрываем чекбокс */
+    #menu__toggle {
+    opacity: 0;
+    }
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    /* ////////////////////////////////////////////////////////// */
     .container{
         max-width: 700px;
         margin: 0 auto;
@@ -834,16 +923,27 @@ span:hover{
         max-width: 600px;
         margin: 0 auto;
     }
+    .delivery{
+        margin-top: 50px;
+    }
+
     .dilevery__info-location{
         font-size: 44px;
-        width: 400px;
+        width: 100%;
+        height: 150px;
     }
     .dilevery__info-elem{
-        margin-left: 2%;
-        margin-right: 5%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .dilevery__info-img{
+        display: none;
     }
     .dilevery__info-advertising{
-        width: 400px;
+    }
+    .dilevery__info-span{
+        margin-bottom: 20px;
     }
     .price_info{
         width: 200px;
@@ -860,20 +960,40 @@ span:hover{
         width: 200px;
         font-size: 14px;
     }
+    .tovar_info-delivery{
+        width: 200px;
+    }
     .tovar_info-delivery > div > img{
-        width: 400px;
+        width: 200px;
     }
     .tovar_info-img-first{
-        margin-top: 80%;
+        margin-top: 20%;
         margin-right: 40%;
     }
     .tovar_info-img-last{
-        margin-top: 80%;
+        margin-top: 20%;
         margin-left: 40%;
     }
     .benefit{
         width: auto;
         height: auto;    
+    }
+    .benefit-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .benefit-tabs{
+        display: flex;
+        gap: 10px;
+    }
+    .benefit-tabs>div{
+        width: 90px;
+        height: 90px;
+        background-color: #e4e4e4;
+        border-radius: 16px;
+    }
+    .benefit-tabs>div>img{
+        display: none;
     }
     .advantage_info{
         width: auto;
