@@ -996,62 +996,74 @@ span:hover{
         display: none;
     }
     .advantage_info{
+        display: flex;
         width: auto;
         height: auto;
+        gap: 0px;
     }
-    .advantage_info-saving{
-        width: 150px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .advantage_info-products{
-        width: 150px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .advantage_info-prompt{
-        width: 150px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .advantage_info-tovar{
-        width: 150px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .advantage_info{
-        display: flex;
-        gap: 45px;
+    .advantage_info>div>div{
+        font-size: 14px;
+        padding-left: 10px;
     }
     .advantage_info > div>div{
         display: flex;
         align-items: center;
     }
     .advantage_info > div>div>img{
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 50px;
-        height: 50px;
+        display: none;
     }
     .online_trade-info{
         width: auto;
         height: auto;
     }
     .online_trade-img{
-        margin-left: 5%;
+        display: none;
     }
     .online_trade-info-text{
         margin-left: 5%;
-        margin-top: 5%;
+        margin-top: 0;
     }
     .online_trade-info-text-first{
         width: 80%;
+        font-size: 20px;
     }
     .online_trade-info-text-last{
         width: 80%;
     }
     .okey_post-info{
         width: auto;
+    }
+    .okey_post-info-text-first{
+        width: 100%;
+    }
+    .okey_post-info-text-last{
+        width: 100%;
+    }
+    .okey_post-info-location{
+        height: 240px;
+    }
+    .location_info>div>div>img{
+        display: none;
+    }
+    .location_info{
+        display: flex;
+        gap: 5px;
+    }
+    .location_info-from{
+        margin: 0;
+        margin-left: 5px;
+    }
+    .location_info-city{
+        margin: 0;
+    }
+    .location_info-index{
+        margin: 0;
+    }
+    .location_info-weight{
+        margin: 0;
+    }
+    .location_info-services{
+        margin-right: 5px;
     }
     .delivery_options-info{
         width: auto;
