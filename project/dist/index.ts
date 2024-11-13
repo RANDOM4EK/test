@@ -211,18 +211,43 @@
 // hasTovar(test)
 
 
-let test = [
-    {
-        name:'USD',
-        currency:2
-    },{
-        name:'RUB',
-        currency:12
-    }
-]
+// let test = [
+//     {
+//         name:'USD',
+//         currency:2
+//     },{
+//         name:'RUB',
+//         currency:12
+//     }
+// ]
 
-function hasTovar(converter:{name:string,currency:number}[]){
-    console.log(converter)
-}
-hasTovar(test)
-    
+// function converter(converter:{name:string,currency:number}[]){
+//     let sum = converter.map((x)=>x.currency)
+//     let rubUsd = 0.1
+//     let usdRub = 10
+//     console.log(sum[1]*rubUsd)
+//     console.log(sum[0]*usdRub)
+// }
+// converter(test)
+
+// let test = [
+//     {
+//         name:'Уборка',
+//         priority:3
+//     },{
+//         name:'Готовка',
+//         priority:4
+//     },{
+//         name:'Вышивание',
+//         priority:1
+//     },{
+//         name:'Чтение',
+//         priority:2
+//     }
+// ]
+
+// function sort(priority:{name:string,priority:number}[]){
+//     return priority.sort((a, b) => b.priority - a.priority);
+// }
+// console.log(sort(test))
+
