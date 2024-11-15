@@ -288,3 +288,26 @@ export {};
 //     }
 // }
 // takeParams(test)
+// function one<T>(arg?:(x: T)=>T): T {
+//     return arg ? arg(1 as unknown as T) : 1 as unknown as T;
+// }
+// function two<T>(arg?: (x: T) => T): T {
+//     return arg ? arg(2 as unknown as T) : 2 as unknown as T;
+// }
+// function plus(right: number) {
+//     return function sum(left: number): number {
+//         return left + right;
+//     }
+// }
+// console.log(two(plus(one())));
+// function disemvowel(str: string): string {
+//     let x = 'eyuioaEYUIOA';
+//     let result = '';
+//     for (let i = 0; i < str.length; i++) {
+//         if (!x.includes(str[i])) {
+//             result += str[i];
+//         }
+//     }
+//     return result;
+// }
+// console.log(disemvowel('This website is for losers LOL!'));
