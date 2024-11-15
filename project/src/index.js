@@ -210,3 +210,81 @@ export {};
 //     return priority.sort((a, b) => b.priority - a.priority);
 // }
 // console.log(sort(test))
+// let test = [
+//     {
+//         user:'user1',
+//         like:1
+//     },{
+//         user:'user2',
+//         like:1
+//     },{
+//         user:'user3',
+//         like:0
+//     },{
+//         user:'user4',
+//         like:1
+//     }
+// ]
+// function accLike(like:{user:string,like:number}[]){
+//     let result = like.reduce((acc,x)=>acc + x.like,0)
+//     console.log(result)
+// }
+// accLike(test)
+// let test = [
+//     {
+//         version:'1.2.3'
+//     },{
+//         version:'1.2.3'
+//     }
+// ]
+// function takeVersion(version:{version:string}[]){
+//     let arrStr = version
+//     .map((x)=>x.version)
+//     let arrNum = arrStr.map(x=>x.split('.').map(Number))
+//     let vers1 = arrNum[0] || 0
+//     let vers2 = arrNum[1] || 0
+//     vers1.forEach((elem,i)=>{
+//         if(elem > vers2[i]){
+//             console.log(1)
+//         }
+//         if(elem < vers2[i]){
+//             console.log(2)
+//         }
+//     })
+// }
+// takeVersion(test)
+// let test = [
+//     {
+//         name:'user',
+//         shoulders:48,
+//         breast:52,
+//         hight:72
+//     }
+// ]
+// function takeParams(params:{name:string,shoulders:number,breast:number,hight:number}[]){
+//     const sizeRanges = [
+//         {
+//             size: 'S',
+//             shoulders: { min: 45, max: 47 },
+//             breast: { min: 49, max: 51 },
+//             hight: { min: 70, max: 71 }
+//         },
+//         {
+//             size: 'M',
+//             shoulders: { min: 48, max: 50 },
+//             breast: { min: 52, max: 54 },
+//             hight: { min: 72, max: 74 }
+//         }
+//     ];
+//     for (let size of sizeRanges) {
+//         const matches = params.some((x) => 
+//             x.shoulders >= size.shoulders.min && x.shoulders <= size.shoulders.max &&
+//             x.breast >= size.breast.min && x.breast <= size.breast.max &&
+//             x.hight >= size.hight.min && x.hight <= size.hight.max
+//         );
+//         if (matches) {
+//             console.log(size.size);
+//         }
+//     }
+// }
+// takeParams(test)
