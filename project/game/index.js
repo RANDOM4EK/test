@@ -15,8 +15,13 @@ function createElem(arr) {
     container.style.margin = '0 auto';
     container.style.justifyContent = 'center';
     container.style.gap = '5px';
+    
     document.addEventListener('keypress', function(event) {
-        textContainer.innerText +=event.key
+        for(let i = 0; i < arr.length; i++){
+            if(event.key === arr[i]){
+                textContainer.innerText +=event.key
+            }
+        }
     });
     for (let i = 0; i < arr.length; i++) {
         const button = document.createElement('button');
@@ -30,7 +35,10 @@ function createElem(arr) {
         button.addEventListener('click', function(event) {
             if(event.target.tagName === 'BUTTON'){
                 textContainer.innerText += event.target.textContent; 
-            }
+            }  
+                
+            
+            
         });
         container.appendChild(button);
     }
@@ -43,7 +51,7 @@ function createElem(arr) {
 
 
 
-    
+
 }
 document.addEventListener('DOMContentLoaded', function() {
     createElem(russianAlphabet);
