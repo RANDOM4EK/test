@@ -1,6 +1,6 @@
 const russianAlphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.split('');
 const words = [
-    'чмоня',
+    'пульсация',
     'игры',
     'сообщение'
 ];
@@ -111,7 +111,7 @@ function createWords(arr) {
     containerWord.style.display = 'flex';
     containerWord.style.flexDirection = 'row';
     containerWord.style.gap = '20px';
-    containerWord.style.width = '150px';
+    containerWord.style.width = '20%';
     containerWord.style.marginLeft = 'auto';
     containerWord.style.marginRight = 'auto';
     containerWord.style.marginBottom = '50px';
