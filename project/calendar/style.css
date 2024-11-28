@@ -1,0 +1,68 @@
+/* Общий контейнер */
+#container {
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    background-color: #333; /* Тёмно-серый фон */
+    color: white; /* Белый текст */
+    border: 1px solid #444; /* Тёмно-серая граница */
+    border-radius: 12px; /* Меньше скругленные углы */
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Глубже тень */
+    transition: transform 0.3s ease; /* Переход для анимации */
+}
+
+#container.show {
+    transform: scale(1.05); /* Лёгкое увеличение при отображении */
+}
+
+/* Кнопка закрытия */
+#closeSpan {
+    cursor: pointer; /* Изменение курсора при наведении */
+    align-self: flex-end; /* Размещение кнопки закрытия справа */
+    color: red; /* Красный цвет текста */
+    font-weight: bold; /* Жирный текст */
+    font-size: 18px; /* Увеличенный размер шрифта */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Кнопка создания */
+#create {
+    background-color: #28a745; /* Зелёный фон */
+    border: none; /* Без границы */
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Без подчеркивания */
+    display: inline-block; /* Инлайн-блок */
+    font-size: 16px; /* Размер шрифта */
+    margin: 10px 2px; /* Внешние отступы */
+    cursor: pointer; /* Изменение курсора при наведении */
+    border-radius: 4px; /* Скругленные углы */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для изменения фона и масштаба */
+}
+
+#create:hover {
+    background-color: #218838; /* Изменение цвета при наведении */
+    transform: translateY(-2px); /* Лёгкий подъем при наведении */
+}
+
+/* Ввод даты */
+#inputColendar {
+    display: block; /* Блочный элемент */
+    margin: 20px auto; /* Центрирование */
+    padding: 10px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Светло-серая граница */
+    border-radius: 4px; /* Скругленные углы */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Внутренняя тень */
+    transition: border-color 0.3s ease; /* Переход для границы */
+}
+
+#inputColendar:focus {
+    border-color: #007bff; /* Синий цвет границы при фокусе */
+}

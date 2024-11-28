@@ -252,3 +252,6 @@ function counter(trueCount, falseCount) {
 document.addEventListener('DOMContentLoaded', function() {
     game();
 });
+
+
+
