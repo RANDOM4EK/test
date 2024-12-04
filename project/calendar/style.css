@@ -1,36 +1,56 @@
-/* Общий контейнер */
+
+/* CSS */
+#mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.monthContainer {
+    flex: 1 1 30%; /* Гибкость, чтобы столбцы занимали примерно треть ширины */
+    margin: 10px;
+    background-color: #f0f0f0; /* Фон для каждого месяца */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 10px; /* Внутренние отступы */
+}
+
+.monthContainer h2 {
+    text-align: center;
+    font-size: 1.2em; /* Увеличенный размер шрифта */
+    margin-bottom: 10px;
+}
+
 #container {
     display: none;
     flex-direction: column;
-    width: 250px;
+    width: 300px;
     height: auto;
     margin: auto;
-    background-color: #333; /* Тёмно-серый фон */
+    background-color: #444; /* Тёмно-серый фон */
     color: white; /* Белый текст */
-    border: 1px solid #444; /* Тёмно-серая граница */
-    border-radius: 12px; /* Меньше скругленные углы */
+    border: 1px solid #555; /* Тёмно-серая граница */
+    border-radius: 10px; /* Скругленные углы */
     align-items: center; /* Центрирование по горизонтали */
     justify-content: center; /* Центрирование по вертикали */
     padding: 20px; /* Внутренние отступы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Глубже тень */
-    transition: transform 0.3s ease; /* Переход для анимации */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Тень */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Переход для анимации */
 }
 
 #container.show {
     transform: scale(1.05); /* Лёгкое увеличение при отображении */
 }
 
-/* Кнопка закрытия */
 #closeSpan {
     cursor: pointer; /* Изменение курсора при наведении */
     align-self: flex-end; /* Размещение кнопки закрытия справа */
     color: red; /* Красный цвет текста */
     font-weight: bold; /* Жирный текст */
-    font-size: 18px; /* Увеличенный размер шрифта */
+    font-size: 20px; /* Увеличенный размер шрифта */
     margin-bottom: 10px; /* Отступ снизу */
 }
 
-/* Кнопка создания */
 #create {
     background-color: #28a745; /* Зелёный фон */
     border: none; /* Без границы */
@@ -42,7 +62,7 @@
     font-size: 16px; /* Размер шрифта */
     margin: 10px 2px; /* Внешние отступы */
     cursor: pointer; /* Изменение курсора при наведении */
-    border-radius: 4px; /* Скругленные углы */
+    border-radius: 5px; /* Скругленные углы */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для изменения фона и масштаба */
 }
 
@@ -51,18 +71,31 @@
     transform: translateY(-2px); /* Лёгкий подъем при наведении */
 }
 
-/* Ввод даты */
-#inputColendar {
+#inputColendar, #inputTime, #inputEvent {
     display: block; /* Блочный элемент */
-    margin: 20px auto; /* Центрирование */
     padding: 10px; /* Внутренние отступы */
     font-size: 16px; /* Размер шрифта */
+    margin-bottom: 10px; /* Внешние отступы снизу */
     border: 1px solid #ccc; /* Светло-серая граница */
     border-radius: 4px; /* Скругленные углы */
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Внутренняя тень */
     transition: border-color 0.3s ease; /* Переход для границы */
 }
 
-#inputColendar:focus {
+#inputColendar:focus, #inputTime:focus, #inputEvent:focus {
     border-color: #007bff; /* Синий цвет границы при фокусе */
 }
+
+#inputColendar:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Тень при фокусе */
+}
+
+#inputTime:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Тень при фокусе */
+}
+
+#inputEvent:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Тень при фокусе */
+}
+
+#
