@@ -63,8 +63,10 @@ submitButton.addEventListener('click', function(event) {
     const password = passwordInput.value;
     if(password.length < 5){
         redText.style.display = 'block'
+        submitButton.style.backgroundColor = 'red'
     }
     else{
+        submitButton.style.backgroundColor=  'green'
         redText.style.display = 'none'
         console.log('Text:', text);
         console.log('Email:', email);
