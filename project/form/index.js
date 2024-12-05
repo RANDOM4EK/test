@@ -1,6 +1,6 @@
 const container = document.createElement('div');
 container.id = 'formContainer';
-document.body.appendChild(container); // This line ensures the container is added to the document body
+document.body.appendChild(container);
 
 const form = document.createElement('form');
 form.id = 'dynamicForm';
@@ -12,8 +12,6 @@ const textInput = document.createElement('input');
 textInput.type = 'text';
 textInput.id = 'text';
 textInput.name = 'text';
-textInput.minLength = 15
-textInput.maxLength = 30
 textInput.required = true
 
 const emailLabel = document.createElement('label');
@@ -32,13 +30,18 @@ const passwordInput = document.createElement('input');
 passwordInput.type = 'password';
 passwordInput.id = 'password';
 passwordInput.name = 'password';
-passwordInput.minLength = 5;
-passwordInput.maxLength = 15;
 passwordInput.required = true
 
-const submitButton = document.createElement('input');
-submitButton.type = 'submit';
-submitButton.value = 'Submit';
+const submitButton = document.createElement('button');
+submitButton.id = 'submitButton'
+submitButton.innerText = 'Отправить'
+
+
+const redText = document.createElement('p')
+redText.id = 'redText'
+redText.innerText = 'Не верный логин или пароль'
+redText.style.display = 'none'
+
 
 form.appendChild(textLabel);
 form.appendChild(textInput);
@@ -50,15 +53,27 @@ form.appendChild(passwordLabel);
 form.appendChild(passwordInput);
 form.appendChild(document.createElement('br'));
 form.appendChild(submitButton);
+form.appendChild(document.createElement('br'));
+form.appendChild(redText)
 
-form.addEventListener('submit', function(event) {
+submitButton.addEventListener('click', function(event) {
     event.preventDefault();
     const text = textInput.value;
     const email = emailInput.value;
     const password = passwordInput.value;
-    console.log('Text:', text);
-    console.log('Email:', email);
-    console.log('Password:', password);
+    if(password.length < 5){
+        redText.style.display = 'block'
+    }
+    else{
+        redText.style.display = 'none'
+        console.log('Text:', text);
+        console.log('Email:', email);
+        console.log('Password:', password);
+    }
+    
 });
+
+
+
 
 document.getElementById('formContainer').appendChild(form);
