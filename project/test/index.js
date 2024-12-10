@@ -1,31 +1,32 @@
-let container = document.createElement('div');
-container.id = 'container';
-document.body.appendChild(container);
+let leftButton = document.getElementById('leftButton');
+let rightButton = document.getElementById('rightButton');
 
-function createElem() {
-    for (let i = 0; i <= 3; i++) {
-        let elem = document.createElement('div');
-        elem.id = `block${i}`;
-        elem.innerText = i;
-        container.appendChild(elem);
+let transforms = {
+    img0: 0,
+    img1: 0,
+    img2: 0
+};
 
-        elem.draggable = true;
-
-        elem.addEventListener('dragstart', (event) => {
-            event.dataTransfer.setData('text/plain', event.target.id);
-        });
-
-        elem.addEventListener('dragover', (event) => {
-            event.preventDefault();
-        });
-
-        elem.addEventListener('drop', (event) => {
-            event.preventDefault();
-            let data = event.dataTransfer.getData('text/plain');
-            let draggedElement = document.getElementById(data);
-            event.target.appendChild(draggedElement);
-        });
-    }
+function updateTransform(id, value) {
+    document.getElementById(id).style.transform = `translate(${value}px, 0)`;
 }
 
-createElem();
+rightButton.addEventListener('click', function() {
+    transforms.img0 = transforms.img0 === 200 ? 400 : (transforms.img0 === 400 ? 0 : 200);
+    transforms.img1 = transforms.img1 === -200 ? 0 : (transforms.img1 === 0 ? 200 : -200);
+    transforms.img2 = transforms.img2 === 0 ? -400 : (transforms.img2 === -400 ? -200 : 0);
+
+    updateTransform('img0', transforms.img0);
+    updateTransform('img1', transforms.img1);
+    updateTransform('img2', transforms.img2);
+});
+
+leftButton.addEventListener('click', function() {
+    transforms.img0 = transforms.img0 === 200 ? 0 : (transforms.img0 === 0 ? 400 : 200);
+    transforms.img1 = transforms.img1 === -200 ? 200 : (transforms.img1 === 200 ? 0 : -200);
+    transforms.img2 = transforms.img2 === 0 ? -200 : (transforms.img2 === -200 ? -400 : 0);
+
+    updateTransform('img0', transforms.img0);
+    updateTransform('img1', transforms.img1);
+    updateTransform('img2', transforms.img2);
+});
